@@ -87,9 +87,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           }
         },
         "lint": {
@@ -120,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "P3"
+  "defaultProject": "P3",
+  "cli": {
+    "analytics": "133806a2-53ce-467f-9ef8-8b826c18bf72"
+  }
 }
