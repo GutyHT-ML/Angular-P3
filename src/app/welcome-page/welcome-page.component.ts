@@ -8,12 +8,13 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class WelcomePageComponent implements OnInit {
   public name: String;
+  public text: String
   constructor(private router: ActivatedRoute) { }
 
   ngOnInit(): void {
     let name = this.router.snapshot.paramMap.get('name')
     this.name = name
-    console.log(this.name)
+    this.text = "Welcome "+this.name
   }
 
 }
